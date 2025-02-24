@@ -1,0 +1,71 @@
+{
+  "protagonista": {
+    "nombre": "Protagonista",
+    "ataques": {
+      "luz": {
+        "nombre": "Haz de Luz",
+        "dano": 10,
+        "mana": 5,
+        "tipo": "luz"
+      },
+      "fuego": {
+        "nombre": "Bola de Fuego",
+        "dano": 10,
+        "mana": 5,
+        "tipo": "fuego"
+      },
+      "aire": {
+        "nombre": "Viento Cortante",
+        "dano": 15,
+        "mana": 7,
+        "tipo": "aire"
+      }
+    },
+    "estadisticas": {
+      "vida": 20,
+      "ataque": 5,
+      "defensa": 2,
+      "mana": 15,
+      "debilidad": ["fisico"]
+    },
+    "nivel": 1
+  },
+  "hombre-lobo": {
+    "nombre": "Hombre Lobo",
+    "ataques": {
+      "aranazo": {
+        "nombre": "Arañazo",
+        "dano": 10,
+        "mana": 0,
+        "tipo": "fisico"
+      }
+    },
+    "estadisticas": {
+      "vida": 20,
+      "ataque": 10,
+      "defensa": 3,
+      "mana": 0,
+      "debilidad": ["fuego"]
+    },
+    "nivel": 1
+  },
+  "vampiro": {
+    "nombre": "Vampiro",
+    "ataques": {
+      "mordisco": {
+        "nombre": "Mordisco",
+        "dano": 10,
+        "mana": 0,
+        "tipo": "fisico"
+      }
+    },
+    "estadisticas": {
+      "vida": 20,
+      "ataque": 10,
+      "defensa": 3,
+      "mana": 20,
+      "debilidad": ["luz"]
+    },
+    "nivel": 1
+  }
+}
