@@ -1,5 +1,5 @@
 //import { useState } from 'react'
-import producto1Depi from '/img/producto1Depi.png'
+import ProductosData from './data/productos.json'
 //import viteLogo from '/vite.svg'
 import './App.css'
 import Productos from './componentes/Productos/Productos'
@@ -7,12 +7,15 @@ import Productos from './componentes/Productos/Productos'
 function App() {
 
   return (
-    <Productos
-      img={producto1Depi}
-      titulo="Tarjeta Regalo"
-      texto="Si no sabes que regalar, una tarjeta regalo puede ser tu mejor decision para esa persona tan especial."
-      coste="29.99€"
-    />
+    ProductosData.map((producto) => (
+      <Productos
+        key = {producto.id}
+        img={producto.img}
+        titulo={producto.titulo}
+        texto={producto.texto}
+        coste={producto.coste}
+      />
+    ))
   )
 }
 
