@@ -1,4 +1,4 @@
-import './Productos.css'
+import './ProductosCards.css'
 
 function Productos(props) {
   return (

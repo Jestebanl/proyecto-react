@@ -2,7 +2,7 @@
 import ProductosData from './data/productos.json'
 //import viteLogo from '/vite.svg'
 import './App.css'
-import Productos from './componentes/Productos/Productos'
+import Productos from './components/Productos/ProductosCards'
 
 function App() {
 
