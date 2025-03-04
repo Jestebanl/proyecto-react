@@ -1,10 +1,8 @@
 import { useState } from 'react'
-//import ProductosData from './data/productos.json'
-//import viteLogo from '/vite.svg'
 import './App.css'
-import Productos from './components/Pages/Productos/Productos'
 import NavBar from './components/comun/Navbar'
 import Inicio from './components/Pages/Inicio/Inicio'
+import Productos from './components/Pages/Productos/Productos'
 
 
 function App(){
@@ -20,8 +18,6 @@ function App(){
       return <Inicio />
     else if(page === 'productos')
       return <Productos />
-    else if(page === 'promociones')
-      return ""
     else if(page === 'blog')
       return ""
     else if(page === 'desarrolladores')

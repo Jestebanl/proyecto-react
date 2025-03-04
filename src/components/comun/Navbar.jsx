@@ -4,7 +4,7 @@ function Navbar(props) {
   return (
     <header id="header">
       <div className="logo">
-        <a href="#" className="logo">
+        <a href="" className="logo" onClick={() => props.cambiarLaPagina('inicio')}>
           <img src="/img/iconCentrosUnico.png" className="logoImg" />
         </a>
       </div>
@@ -12,42 +12,22 @@ function Navbar(props) {
       <nav id="nav">
         <ul>
           <li className="lista-nav">
-            <a 
-              href="#" 
-              onClick={() => props.cambiarLaPagina('inicio')}
-            >
+            <a onClick={() => props.cambiarLaPagina('inicio')}>
               Inicio
             </a>
           </li>
           <li className="lista-nav">
-            <a 
-              href="#" 
-              onClick={() => props.cambiarLaPagina('productos')}
-            >
+            <a onClick={() => props.cambiarLaPagina('productos')}>
               Productos
             </a>
           </li>
           <li className="lista-nav">
-            <a 
-              href="#" 
-              onClick={() => props.cambiarLaPagina('promociones')}
-            >
-              Promociones
-            </a>
-          </li>
-          <li className="lista-nav">
-            <a 
-              href="#" 
-              onClick={() => props.cambiarLaPagina('blog')}
-            >
+            <a onClick={() => props.cambiarLaPagina('blog')}>
               Blog
             </a>
           </li>
           <li className="lista-nav">
-            <a 
-              href="#" 
-              onClick={() => props.cambiarLaPagina('desarrolladores')}
-            >
+            <a onClick={() => props.cambiarLaPagina('desarrolladores')}>
               Desarrolladores
             </a>
           </li>
