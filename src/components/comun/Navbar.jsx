@@ -1,6 +1,6 @@
 import './Navbar.css';
 
-function Navbar() {
+function Navbar(props) {
   return (
     <header id="header">
       <div className="logo">
@@ -11,11 +11,46 @@ function Navbar() {
 
       <nav id="nav">
         <ul>
-          <li className="lista-nav"><a href="#">Inicio</a></li>
-          <li className="lista-nav"><a href="#">Productos</a></li>
-          <li className="lista-nav"><a href="#">Promociones</a></li>
-          <li className="lista-nav"><a href="#">Blog</a></li>
-          <li className="lista-nav"><a href="#">Desarrolladores</a></li>
+          <li className="lista-nav">
+            <a 
+              href="#" 
+              onClick={() => props.cambiarLaPagina('inicio')}
+            >
+              Inicio
+            </a>
+          </li>
+          <li className="lista-nav">
+            <a 
+              href="#" 
+              onClick={() => props.cambiarLaPagina('productos')}
+            >
+              Productos
+            </a>
+          </li>
+          <li className="lista-nav">
+            <a 
+              href="#" 
+              onClick={() => props.cambiarLaPagina('promociones')}
+            >
+              Promociones
+            </a>
+          </li>
+          <li className="lista-nav">
+            <a 
+              href="#" 
+              onClick={() => props.cambiarLaPagina('blog')}
+            >
+              Blog
+            </a>
+          </li>
+          <li className="lista-nav">
+            <a 
+              href="#" 
+              onClick={() => props.cambiarLaPagina('desarrolladores')}
+            >
+              Desarrolladores
+            </a>
+          </li>
         </ul>
       </nav>
 

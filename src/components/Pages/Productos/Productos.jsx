@@ -1,5 +1,5 @@
-import ProductosData from "../../data/productos.json"
-import ProductosCards from "../Productos/ProductosCards"
+import ProductosData from "../../../data/productos.json"
+import ProductosCards from "../../Productos/ProductosCards"
 import './Productos.css'
 
 function Productos() {
