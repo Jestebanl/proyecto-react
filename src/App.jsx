@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import NavBar from './components/comun/Navbar'
+import NavBar from './components/comun/Navbar/Navbar'
+import Footer from './components/comun/Footer/Footer'
 import Inicio from './components/Pages/Inicio/Inicio'
 import Productos from './components/Pages/Productos/Productos'
 
@@ -30,7 +31,10 @@ function App(){
   return (
     <div>
       <NavBar cambiarLaPagina={cambiarPagina}/>
+      
       {getContent()}
+
+      <Footer/>
     </div>
   )
 
