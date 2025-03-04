@@ -1,22 +1,21 @@
 //import { useState } from 'react'
-import ProductosData from './data/productos.json'
+import { Component } from 'react'
+//import ProductosData from './data/productos.json'
 //import viteLogo from '/vite.svg'
 import './App.css'
-import Productos from './components/Productos/ProductosCards'
+import Productos from './components/Pages/Productos'
+import NavBar from './components/comun/Navbar'
 
-function App() {
 
+class App extends Component {
+  render() {
   return (
-    ProductosData.map((producto) => (
-      <Productos
-        key = {producto.id}
-        img={producto.img}
-        titulo={producto.titulo}
-        texto={producto.texto}
-        coste={producto.coste}
-      />
-    ))
+    <div>
+      <NavBar />
+      <Productos />
+    </div>
   )
+}
 }
 
 export default App
