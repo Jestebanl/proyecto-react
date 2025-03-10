@@ -1,10 +1,7 @@
 import CestaCards from "../../Cards/CestaCards/CestaCards"
 import './Cesta.css'
 
-function Cesta({cesta, removeFromCesta}) {
-  const removeFromCart = productoId => {
-    removeFromCesta(productoId)
-  }
+function Cesta({cesta}) {
   return (
     <div className="card cart">
     <label className="title">Your cart</label>
@@ -15,7 +12,6 @@ function Cesta({cesta, removeFromCesta}) {
           img={producto.img}
           titulo={producto.titulo}
           coste={producto.coste}
-          removeFromCart={removeFromCart}
         />
       ))}
     </div>
