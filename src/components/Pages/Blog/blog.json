@@ -1,0 +1,29 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "Tratamientos dermoesteticos que funcionan",
+        "image": "img/acidoh.jpg",
+        "content": "Está claro que los milagros en estética no existen, pero determinados tratamientos consiguen resultados eficaces. Miembros del Grupo Español de Dermatología Estética y Terapéutica (Gedet) de la Academia Española de Dermatología y Venereología (AEDV), aseguran que bien indicados, personalizados y combinados con otros procedimientos (junto a dieta y ejercicio), algunos de ellos sí funcionan."
+      },
+      {
+        "id": 2,
+        "title": "¿Como prevenir las manchas y lesiones en el verano?",
+        "image": "img/revision.jpg",
+        "content": "Aunque es muy obvio, lo principal para combatir las manchas es usar protector solar. Usa el que más se ajuste a tu tipo de piel. Aplí­catelo 30 minutos antes de exponerte al sol, tras estar en contacto con el agua y cada dos horas. En la gama Delial puedes encontrar una gran variedad de protectores solares, escoge el que más se adapte a tus necesidades. El UV Gel Hidratante con SPF50 es perfecto para rostro y escote ya que se absorbe fácilmente como un gel pero hidrata como una crema. ¡Lo más práctico!"
+      },
+      {
+        "id": 3,
+        "title": "Descubre cual es tu tratamiento ideal",
+        "image": "img/crema.jpg",
+        "content": "CooLifting: Un tratamiento de cabina no invasivo que nebuliza ácido hialurónico en la cara para activar la hidratación en la epidermis, devolviendo la luminosidad necesaria en tan solo 5 minutos. Hialurox Anti-Aging: Un tratamiento que combina la acción de ácidos hialurónicos y cóctel de vitaminas consiste en mesoterapia facial que mejoran el aspecto de la piel. Teoxane: Una nueva tecnología que ha desarrollado el Laboratorio Teoxane, llamada Preserved Network Technology, permite obtener un ácido hialurónico que reúne las características adecuadas para tratar y corregir los labios, respetando su movilidad."
+      },
+      {
+        "id": 4,
+        "title": "¿Como asesorarse en cuanto a intervenciones esteticas?",
+        "image": "img/intervencion.jpg",
+        "content": "Si estás considerando someterte a una intervención estética, es importante que te asesores adecuadamente para tomar una decisión informada. En España, algunas operaciones de cirugía plástica pueden ser cubiertas por la Seguridad Social. Si deseas obtener más información sobre las operaciones que cubre la Seguridad Social, te recomiendo que consultes con un médico especialista o un psicólogo. Además, es importante que te asegures de que el cirujano plástico que elijas esté debidamente acreditado y tenga experiencia en la intervención que deseas."
+      }
+    ]
+  }
+  
