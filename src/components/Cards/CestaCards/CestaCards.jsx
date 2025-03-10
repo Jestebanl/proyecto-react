@@ -1,27 +1,19 @@
 import './CestaCards.css'
 
-function CestaCards(props) {
+function CestaCards({id, img, titulo, coste, removeFromCart}) {
   return (
     <div className="products">
       <div className="product">
-        <img src={props.img} alt={props.titulo} className='img' />
+        <img src={img} alt={titulo} className='img' />
         <div>
-          <span>{props.titulo}</span>
+          <span>{titulo}</span>
         </div>
-        {/* <div className="quantity">
-                <button>
-                  <svg fill="none" viewBox="0 0 24 24" height={14} width={14} xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinejoin="round" strokeLinecap="round" strokeWidth="2.5" stroke="#47484b" d="M20 12L4 12" />
-                  </svg>
-                </button>
-                <label>2</label>
-                <button>
-                  <svg fill="none" viewBox="0 0 24 24" height={14} width={14} xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinejoin="round" strokeLinecap="round" strokeWidth="2.5" stroke="#47484b" d="M12 4V20M20 12H4" />
-                  </svg>
-                </button>
-              </div> */}
-        <label className="price small">{props.coste}</label>
+        <label className="price small">{coste}</label>
+        <button onClick={() => removeFromCart(id)} className="eliminar" type="reset">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="black" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
       </div>
     </div>
   )
