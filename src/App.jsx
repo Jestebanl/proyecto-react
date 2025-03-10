@@ -9,12 +9,15 @@ import Login from './auth/Login'
 import Cesta from './components/Pages/Cesta/Cesta'
 import { Toaster, toast  } from 'sonner'
 import Blog from './components/Pages/Blog/Blog'
+import ProductosPopup from './components/Cards/ProductosPopup/ProductosPopup'
 
 function App() {
   const [page, setPage] = useState('inicio')
   const [showLoginPopup, setShowLoginPopup] = useState(false)
   const [cesta, setCesta] = useState([])
   const [busqueda, setBusqueda] = useState('')
+  const [showCardPopup, setShowCardPopup] = useState(false)
+  const [cardPopup, setCardPoput] = useState({})
 
   const cambiarPagina = pagina => {
     setPage(pagina)
@@ -38,12 +41,21 @@ function App() {
     setShowLoginPopup(!showLoginPopup)
   }
 
+  const definirCardPopup = producto => {
+    setCardPoput(producto)
+    toggleCardPopup()
+  }
+
+  const toggleCardPopup = () => {
+    setShowCardPopup(!showCardPopup)
+  }
+
   const getContent = () => {
     switch(page) {
       case 'inicio':
-        return <Inicio addToCart={addToCart}/>
+        return <Inicio addToCart={addToCart} toggleCard={definirCardPopup}/>
       case 'productos':
-        return <><Buscador buscar={buscar}/><Productos addToCart={addToCart} busqueda={busqueda}/></>
+        return <><Buscador buscar={buscar}/><Productos addToCart={addToCart} busqueda={busqueda} toggleCard={definirCardPopup}/></>
       case 'blog':
         return <Blog/>
       case 'cesta':
@@ -63,6 +75,8 @@ function App() {
       {getContent()}
 
       {showLoginPopup && <Login onClose={toggleLoginPopup} />}
+
+      {showCardPopup && <ProductosPopup onClose={toggleCardPopup} producto={cardPopup} addToCart={addToCart} />}
       
       <Toaster />
 

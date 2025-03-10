@@ -3,9 +3,13 @@ import ProductosData from "../../../data/productos.json"
 import ProductosCards from "../../Cards/ProductosCards/ProductosCards"
 import './Productos.css'
 
-function Productos({addToCart, busqueda}) {
+function Productos({addToCart, busqueda, toggleCard}) {
   const addToCesta = producto => {
     addToCart(producto)
+  }
+
+  const toggleCardPopup = producto => {
+    toggleCard(producto)
   }
 
   const getCards = () => { 
@@ -19,6 +23,7 @@ function Productos({addToCart, busqueda}) {
           texto={producto.texto}
           coste={producto.coste}
           addToCart={addToCesta}
+          toggleCardPopup={toggleCardPopup}
         />
       ))
     }
