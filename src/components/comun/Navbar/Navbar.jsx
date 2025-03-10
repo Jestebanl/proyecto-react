@@ -12,14 +12,14 @@ function Navbar({ cambiarLaPagina, toggleLoginPopup }) {
 
       <nav id="nav">
         <ul>
-          <li className="lista-nav">
-            <a onClick={() => cambiarLaPagina('inicio')}>Inicio</a>
+          <li onClick={() => cambiarLaPagina('inicio')} className="lista-nav">
+            <p>Inicio</p>
           </li>
-          <li className="lista-nav">
-            <a onClick={() => cambiarLaPagina('productos')}>Productos</a>
+          <li onClick={() => cambiarLaPagina('productos')} className="lista-nav">
+            <p>Productos</p>
           </li>
-          <li className="lista-nav">
-            <a onClick={() => cambiarLaPagina('blog')}>Blog</a>
+          <li onClick={() => cambiarLaPagina('blog')} className="lista-nav">
+            <p>Blog</p>
           </li>
         </ul>
       </nav>
