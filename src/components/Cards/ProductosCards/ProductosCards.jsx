@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import './ProductosCards.css'
 
 function Productos({id, img, titulo, texto, coste, addToCart}) {

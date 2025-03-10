@@ -1,5 +1,6 @@
 import './Navbar.css';
 
+// eslint-disable-next-line react/prop-types
 function Navbar({ cambiarLaPagina, toggleLoginPopup }) {
   return (
     <header id="header">

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import CestaCards from "../../Cards/CestaCards/CestaCards"
 import './Cesta.css'
 

@@ -1,15 +1,16 @@
 import './CestaCards.css'
 
+// eslint-disable-next-line react/prop-types
 function CestaCards({id, img, titulo, coste, removeFromCart}) {
-  const props = {img, titulo, coste}
+  
   return (
 
     <div className="product" key={id}>
-      <img src={props.img} alt={props.titulo} className='img' />
+      <img src={img} alt={titulo} className='img' />
       <div>
-        <span>{props.titulo}</span>
+        <span>{titulo}</span>
       </div>
-      <label className="price small">{props.coste}</label>
+      <label className="price small">{coste}</label>
       <button onClick={() => removeFromCart(id)} className="remove-button">Remove</button>
     </div>
   )

@@ -1,5 +1,6 @@
 import './Buscador.css'
 
+// eslint-disable-next-line react/prop-types
 function Buscador({ buscar }) {
   return (
     <>

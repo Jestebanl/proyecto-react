@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import ProductosData from "../../../data/productos.json"
 import ProductosCards from "../../Cards/ProductosCards/ProductosCards"
 import './Productos.css'
