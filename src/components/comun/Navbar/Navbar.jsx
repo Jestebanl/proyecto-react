@@ -20,9 +20,6 @@ function Navbar({ cambiarLaPagina, toggleLoginPopup }) {
           <li className="lista-nav">
             <a onClick={() => cambiarLaPagina('blog')}>Blog</a>
           </li>
-          <li className="lista-nav">
-            <a onClick={() => cambiarLaPagina('desarrolladores')}>Desarrolladores</a>
-          </li>
         </ul>
       </nav>
 

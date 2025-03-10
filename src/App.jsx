@@ -41,8 +41,6 @@ function App() {
         return <><Buscador buscar={buscar}/><Productos addToCart={addToCart} busqueda={busqueda}/></>
       case 'blog':
         return <Blog/>
-      case 'desarrolladores':
-        return <div>Contenido de Desarrolladores</div>
       case 'cesta':
         return <Cesta cesta={cesta}/>
       default:
