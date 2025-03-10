@@ -6,6 +6,7 @@ import Inicio from './components/Pages/Inicio/Inicio'
 import Productos from './components/Pages/Productos/Productos'
 import Login from './auth/Login'
 import Cesta from './components/Pages/Cesta/Cesta'
+import { Toaster, toast  } from 'sonner'
 
 function App() {
   const [page, setPage] = useState('inicio')
@@ -18,6 +19,8 @@ function App() {
 
   const addToCart = producto => {
     setCesta([...cesta, producto])
+    toast.success('Producto añadido a la cesta');
+
   }
 
   const toggleLoginPopup = () => {
@@ -51,6 +54,8 @@ function App() {
       {getContent()}
 
       {showLoginPopup && <Login onClose={toggleLoginPopup} />}
+      
+      <Toaster />
 
       <Footer/>
     </div>
