@@ -1,8 +1,9 @@
 import './CestaCards.css'
+import BiTrash from '/img/BiTrash.svg'
 
 // eslint-disable-next-line react/prop-types
-function CestaCards({id, img, titulo, coste, removeFromCart}) {
-  
+function CestaCards({ id, img, titulo, coste, removeFromCart }) {
+
   return (
 
     <div className="product" key={id}>
@@ -11,7 +12,10 @@ function CestaCards({id, img, titulo, coste, removeFromCart}) {
         <span>{titulo}</span>
       </div>
       <label className="price small">{coste}</label>
-      <button onClick={() => removeFromCart(id)} className="remove-button">Remove</button>
+      <button onClick={() => removeFromCart(id)} className="remove-button">
+      </button>
+
+
     </div>
   )
 }

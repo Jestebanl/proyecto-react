@@ -8,7 +8,7 @@ function Cesta({ cesta, removeFromCart }) {
   }
   return (
     <div className="cesta-container">
-      <label className="title">Your cart</label>
+      <label className="title"><strong>Carrito de la compra</strong></label>
       <div className="products">
         {cesta.map((producto) => (
           <CestaCards

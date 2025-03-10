@@ -4,10 +4,13 @@
   justify-content: space-around;
   align-items: center;
   margin: 10px 0;
+  
 }
 
 .product img{
   max-width: 100px;
+  border: 1px solid #ff7f32;
+  border-radius: 10px;
 }
 
 .product span {
@@ -32,3 +35,28 @@
 .card .small sup {
   font-size: px;
 }
+.remove-button {
+  height: 25px;
+  width: 25px;
+  color: white; /* Asegura que el texto sea legible */
+  border: none;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  background-image: url(/public/img/BiTrash.svg);
+  background-size: contain;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  transform: scale(0.9);
+  transition: transform 0.1s ease-in-out;
+
+}
+.remove-button:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
