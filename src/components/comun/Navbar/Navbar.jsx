@@ -30,7 +30,7 @@ function Navbar({ cambiarLaPagina, toggleLoginPopup }) {
         <a href="#" className="perfil" id="btnSesion" onClick={toggleLoginPopup}>
           <i className="fa-solid fa-user"></i>
         </a>
-        <a href="#" className="cesta" id="btnCesta">
+        <a onClick={() => cambiarLaPagina('cesta')} className="cesta" id="btnCesta">
           <i className="fa-solid fa-bag-shopping"></i>
         </a>
       </div>

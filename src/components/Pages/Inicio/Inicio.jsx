@@ -1,8 +1,11 @@
 import ProductosData from "../../../data/productos.json"
-import ProductosCards from "../../Productos/ProductosCards"
+import ProductosCards from "../../Cards/ProductosCards/ProductosCards"
 import './Inicio.css'
 
-function Inicio() {
+function Inicio({addToCart}) {
+  const addToCesta = producto => {
+    addToCart(producto)
+  }
   return (
     <section className="deseados">
       {ProductosData.filter(producto => producto.deseado === true).map(deseado => (
@@ -12,6 +15,7 @@ function Inicio() {
           titulo={deseado.titulo}
           texto={deseado.texto}
           coste={deseado.coste}
+          addToCart={addToCesta}
         />
       ))}
     </section>

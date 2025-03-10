@@ -1,8 +1,11 @@
 import ProductosData from "../../../data/productos.json"
-import ProductosCards from "../../Productos/ProductosCards"
+import ProductosCards from "../../Cards/ProductosCards/ProductosCards"
 import './Productos.css'
 
-function Productos() {
+function Productos({addToCart}) {
+  const addToCesta = producto => {
+    addToCart(producto)
+  }
   return (
     <section className="producto">
       {ProductosData.map((producto) => (
@@ -12,6 +15,7 @@ function Productos() {
           titulo={producto.titulo}
           texto={producto.texto}
           coste={producto.coste}
+          addToCart={addToCesta}
         />
       ))}
     </section>
