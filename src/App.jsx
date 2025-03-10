@@ -8,6 +8,7 @@ import Buscador from './components/Pages/Buscador/Buscador'
 import Login from './auth/Login'
 import Cesta from './components/Pages/Cesta/Cesta'
 import { Toaster, toast  } from 'sonner'
+import Blog from './components/Pages/Blog/Blog'
 
 function App() {
   const [page, setPage] = useState('inicio')
@@ -39,7 +40,7 @@ function App() {
       case 'productos':
         return <><Buscador buscar={buscar}/><Productos addToCart={addToCart} busqueda={busqueda}/></>
       case 'blog':
-        return <div>Contenido del Blog</div>
+        return <Blog/>
       case 'desarrolladores':
         return <div>Contenido de Desarrolladores</div>
       case 'cesta':
