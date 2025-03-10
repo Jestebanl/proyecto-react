@@ -2,13 +2,9 @@ import ProductosData from "../../../data/productos.json"
 import ProductosCards from "../../Cards/ProductosCards/ProductosCards"
 import './Productos.css'
 
-function Productos({addToCart, removeFromCart, busqueda}) {
+function Productos({addToCart, busqueda}) {
   const addToCesta = producto => {
     addToCart(producto)
-  }
-
-  const removeFromCesta = producto => {
-    removeFromCart(producto)
   }
 
   const getCards = () => { 
