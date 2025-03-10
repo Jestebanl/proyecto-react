@@ -1,7 +1,10 @@
 import CestaCards from "../../Cards/CestaCards/CestaCards"
 import './Cesta.css'
 
-function Cesta({ cesta }) {
+function Cesta({ cesta, removeFromCart }) {
+  const borrarElemento = (id) => {
+    removeFromCart(id)
+  }
   return (
     <div className="cesta-container">
       <label className="title">Your cart</label>
@@ -9,9 +12,11 @@ function Cesta({ cesta }) {
         {cesta.map((producto) => (
           <CestaCards
             key={producto.id}
+            id={producto.id}
             img={producto.img}
             titulo={producto.titulo}
             coste={producto.coste}
+            removeFromCart={borrarElemento}
           />
         ))}
       </div>

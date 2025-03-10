@@ -12,6 +12,7 @@ function Productos({addToCart, busqueda}) {
       return ProductosData.map((producto) => (
         <ProductosCards
           key = {producto.id}
+          id={producto.id}
           img={producto.img}
           titulo={producto.titulo}
           texto={producto.texto}

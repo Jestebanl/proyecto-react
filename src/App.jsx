@@ -25,6 +25,11 @@ function App() {
     toast.success('Producto añadido a la cesta');
   }
 
+  const removeFromCart = productoId => {
+    setCesta(cesta.filter(p => p.id !== productoId))
+    toast.error('Producto eliminado de la cesta');
+  }
+
   const buscar = texto => {
     setBusqueda(texto)
   }
@@ -42,7 +47,7 @@ function App() {
       case 'blog':
         return <Blog/>
       case 'cesta':
-        return <Cesta cesta={cesta}/>
+        return <Cesta cesta={cesta} removeFromCart={removeFromCart}/>
       default:
         return <Inicio />
     }

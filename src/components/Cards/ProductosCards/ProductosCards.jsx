@@ -1,8 +1,9 @@
 import './ProductosCards.css'
 
-function Productos({id, img, titulo, texto, coste, addToCart, removeFromCart}) {
+function Productos({id, img, titulo, texto, coste, addToCart}) {
   const tarjeta = {
     key: id,
+    id: id,
     img: img,
     titulo: titulo,
     coste: coste
