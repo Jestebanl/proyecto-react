@@ -1,5 +1,4 @@
 import './CestaCards.css'
-import BiTrash from '/img/BiTrash.svg'
 
 // eslint-disable-next-line react/prop-types
 function CestaCards({ id, img, titulo, coste, removeFromCart }) {
