@@ -7,8 +7,9 @@
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   z-index: 1000;
+  padding-top: 50px;
 }
 
 .card-popup-content {
@@ -18,9 +19,9 @@
   box-shadow: 0 1px 3px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.24);
   position: relative;
   width: 100%;
-  max-width: 300px;
-  min-width: 225px;
-  height: 450px;
+  max-width: 400px;
+  min-width: 300px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,7 +40,7 @@
 
 .card-popup .card-img {
   background-color: transparent;
-  height: 180px;
+  height: 300px;
   width: 100%;
   border-radius: .5rem;
   transition: .3s ease;
