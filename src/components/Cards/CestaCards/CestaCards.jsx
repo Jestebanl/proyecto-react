@@ -10,7 +10,7 @@ function CestaCards({ id, img, titulo, coste, removeFromCart }) {
       <div>
         <span>{titulo}</span>
       </div>
-      <label className="price small">{coste}</label>
+      <label className="price small">{coste}€</label>
       <button onClick={() => removeFromCart(id)} className="remove-button">
       </button>
 

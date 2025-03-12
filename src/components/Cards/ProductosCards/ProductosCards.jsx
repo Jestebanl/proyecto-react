@@ -26,7 +26,7 @@ function Productos({ id, img, titulo, texto, coste, addToCart, toggleCardPopup }
         <p className="text-title">{titulo}</p>
       </div>
       <div className="card-footer">
-        <span className="text-title">{coste}</span>
+        <span className="text-title">{coste}€</span>
         <button onClick={() => toggleCardPopup(card)} className="card-popup-btn">Más información</button>
         <div onClick={() => addToCart(tarjeta)} className="card-button">
           <svg className="svg-icon" viewBox="0 0 20 20">

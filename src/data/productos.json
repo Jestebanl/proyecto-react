@@ -4,7 +4,7 @@
     "img": "/img/producto1Depi.png",
     "titulo": "Tarjeta Regalo - Experiencia de Belleza",
     "texto": "Obsequia bienestar y cuidado personal con nuestra tarjeta regalo. El detalle perfecto para cualquier ocasión especial.",
-    "coste": "29.99€",
+    "coste": 29.99,
     "deseado": true
   },
   {
@@ -12,7 +12,7 @@
     "img": "/img/producto1MEDI.jpg",
     "titulo": "Hidrolipoclasia Ultrasónica Reductora",
     "texto": "Tratamiento avanzado para eliminar grasa localizada y remodelar tu figura de forma duradera y segura.",
-    "coste": "59.99€",
+    "coste": 59.99,
     "deseado": true
   },
   {
@@ -20,7 +20,7 @@
     "img": "/img/producto2Depi.jpg",
     "titulo": "Depilación Láser de Espalda Completa",
     "texto": "Di adiós al vello no deseado con nuestra depilación láser de última generación. Resultados visibles desde la primera sesión.",
-    "coste": "32€",
+    "coste": 32,
     "deseado": true
   },
   {
@@ -28,7 +28,7 @@
     "img": "/img/producto2ESTÉTICA.jpg",
     "titulo": "Rejuvenecimiento Facial con Accent Prime",
     "texto": "Combina ultrasonidos y radiofrecuencia para reafirmar la piel, reducir arrugas y mejorar la textura facial.",
-    "coste": "89€",
+    "coste": 89,
     "deseado": true
   },
   {
@@ -36,7 +36,7 @@
     "img": "/img/producto3Depi.jpg",
     "titulo": "Depilación Láser de Tórax Masculino",
     "texto": "Elimina el vello del pecho de forma eficaz y duradera con sesiones rápidas y cómodas.",
-    "coste": "32€",
+    "coste": 32,
     "deseado": false
   },
   {
@@ -44,7 +44,7 @@
     "img": "/img/PRODUCTOS4MEDI.jpg",
     "titulo": "Tratamiento de Ojeras con Ácido Hialurónico",
     "texto": "Reduce la apariencia de cansancio y rejuvenece tu mirada con nuestro tratamiento especializado para ojeras.",
-    "coste": "49.99€",
+    "coste": 49.99,
     "deseado": false
   },
   {
@@ -52,7 +52,7 @@
     "img": "/img/PRODUCTO4ESTETICA.jpg",
     "titulo": "Redensificación Facial con Hilos Tensores",
     "texto": "Tratamiento antiedad que redefine el óvalo facial, estimula el colágeno y mejora la firmeza de la piel.",
-    "coste": "49.99€",
+    "coste": 49.99,
     "deseado": false
   },
   {
@@ -60,7 +60,7 @@
     "img": "/img/intervencion.jpg",
     "titulo": "Diseño y Perfilado de Flequillo Personalizado",
     "texto": "Renueva tu look con un flequillo que realce tus rasgos. Nuestros estilistas te asesorarán para un resultado impecable.",
-    "coste": "29.99€",
+    "coste": 29.99,
     "deseado": false
   },
   {
@@ -68,7 +68,7 @@
     "img": "/img/revision.jpg",
     "titulo": "Diseño y Depilación de Cejas Profesional",
     "texto": "Define y da forma a tus cejas para una mirada más expresiva y armoniosa. Resultados naturales y duraderos.",
-    "coste": "19.99€",
+    "coste": 19.99,
     "deseado": false
   },
   {
@@ -76,7 +76,7 @@
     "img": "/img/producto3MEDI.jpg",
     "titulo": "Mesoterapia Facial Revitalizante",
     "texto": "Tratamiento de bioestimulación con vitaminas y ácido hialurónico para una piel radiante e hidratada.",
-    "coste": "49.99€",
+    "coste": 49.99,
     "deseado": false
   },
   {
@@ -84,7 +84,7 @@
     "img": "/img/producto4DEPI.jpg",
     "titulo": "Crema Post-Depilación Láser Corporal Hidratante",
     "texto": "Calma, hidrata y regenera la piel después de la depilación láser. Fórmula enriquecida con colágeno.",
-    "coste": "29.99€",
+    "coste": 29.99,
     "deseado": false
   },
   {
@@ -92,7 +92,7 @@
     "img": "/img/PRODUCTO3ESTETICA.jpg",
     "titulo": "Hidrolipoclasia Localizada para Abdomen",
     "texto": "Elimina la grasa abdominal de forma eficaz y segura con nuestro tratamiento de hidrolipoclasia.",
-    "coste": "29.99€",
+    "coste": 29.99,
     "deseado": false
   },
   {
@@ -100,7 +100,7 @@
     "img": "/img/producto2_index.jpg",
     "titulo": "Crema Antiedad con Colágeno y Ácido Hialurónico",
     "texto": "Reduce arrugas, hidrata y reafirma la piel con nuestra crema de día y noche. Textura ligera y rápida absorción.",
-    "coste": "29.99€",
+    "coste": 29.99,
     "deseado": false
   },
   {
@@ -108,7 +108,7 @@
     "img": "/img/producto2MEDI.jpg",
     "titulo": "Asesoramiento Nutricional Personalizado",
     "texto": "Alcanza tus objetivos estéticos y de salud con un plan nutricional adaptado a tus necesidades y estilo de vida.",
-    "coste": "50€",
+    "coste": 50,
     "deseado": false
   },
   {
@@ -116,7 +116,7 @@
     "img": "/img/producto2ESTETICA.jpg",
     "titulo": "Tratamiento Facial Integral 4D con Germaine de Capuccini",
     "texto": "Experiencia de lujo para rejuvenecer, reafirmar e iluminar tu piel. Resultados visibles desde la primera sesión.",
-    "coste": "100€",
+    "coste": 100,
     "deseado": false
   }
 ]
