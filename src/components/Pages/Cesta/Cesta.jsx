@@ -1,11 +1,16 @@
 /* eslint-disable react/prop-types */
-import CestaCards from "../../Cards/CestaCards/CestaCards"
-import './Cesta.css'
+import CestaCards from "../../Cards/CestaCards/CestaCards";
+import "./Cesta.css";
 
 function Cesta({ cesta, removeFromCart }) {
   const borrarElemento = (id) => {
-    removeFromCart(id)
-  }
+    removeFromCart(id);
+  };
+
+  console.log(cesta);
+  // Calcular el total de la cesta
+  const total = cesta.reduce((acc, producto) => acc + producto.coste, 0);
+
   return (
     <div className="cesta-container">
       <label className="title"><strong>Carrito de la compra</strong></label>
@@ -21,8 +26,13 @@ function Cesta({ cesta, removeFromCart }) {
           />
         ))}
       </div>
+      
+      {/* Caja de total */}
+      <div className="total-box">
+        <strong>Total: </strong> {total}€
+      </div>
     </div>
-  )
+  );
 }
 
-export default Cesta
+export default Cesta;

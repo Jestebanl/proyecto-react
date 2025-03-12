@@ -33,3 +33,15 @@
   width: 100%;
   padding: 10px;
 }
+.total-box {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
