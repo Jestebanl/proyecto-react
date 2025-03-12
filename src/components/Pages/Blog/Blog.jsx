@@ -1,4 +1,4 @@
-import blogData from './blog.json';
+import blogData from '../../../data/blog.json';
 import './Blog.css';
 
 function Blog() {
