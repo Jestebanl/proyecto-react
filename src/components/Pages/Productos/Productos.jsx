@@ -34,6 +34,7 @@ function Productos({addToCart, busqueda, toggleCard, idCesta}) {
           key={idCesta}
           id={idCesta}
           productoId={producto.id}
+          img={producto.img}
           titulo={producto.titulo}
           texto={producto.texto}
           coste={producto.coste}
