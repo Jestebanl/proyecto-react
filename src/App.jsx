@@ -10,6 +10,8 @@ import Cesta from './components/Pages/Cesta/Cesta'
 import { Toaster, toast  } from 'sonner'
 import Blog from './components/Pages/Blog/Blog'
 import ProductosPopup from './components/Cards/ProductosPopup/ProductosPopup'
+import LoginData from './data/login.json'
+import Logged from './auth/Logged'
 
 function App() {
   const [page, setPage] = useState('inicio')
@@ -19,6 +21,41 @@ function App() {
   const [showCardPopup, setShowCardPopup] = useState(false)
   const [cardPopup, setCardPoput] = useState({})
   const [idCesta, setIdCesta] = useState(1)
+  const [isLogged, setIsLogged] = useState(false)
+  const [login, setLogin] = useState([])
+
+
+  const logins = LoginData.login
+
+  const checkLogin = (user, pass) => {
+    if(user === '' || pass === '') {
+      toast.error('Usuario o contraseña vacíos')
+      return
+    }
+    else {
+      console.log(user, pass);
+      let loginFound = false
+      logins.forEach((l) => {
+        if (l.email === user && l.password === pass) {
+          setLogin(l)
+          loginFound = true
+        }
+      })
+      console.log(login)
+      if (loginFound) {
+        setIsLogged(true)
+        setShowLoginPopup(false)
+        toast.success('Login correcto')
+      } else {
+        setIsLogged(false)
+        toast.error('Login incorrecto')
+      }
+    }
+  }
+
+  const logout = () => {
+    setIsLogged(false)
+  }
 
   const cambiarPagina = pagina => {
     setPage(pagina)
@@ -53,17 +90,36 @@ function App() {
   }
 
   const getContent = () => {
-    switch(page) {
-      case 'inicio':
-        return <Inicio addToCart={addToCart} toggleCard={definirCardPopup} idCesta={idCesta}/>
-      case 'productos':
-        return <><Buscador buscar={buscar}/><Productos addToCart={addToCart} busqueda={busqueda} toggleCard={definirCardPopup} idCesta={idCesta}/></>
-      case 'blog':
-        return <Blog/>
-      case 'cesta':
+    if(page === 'inicio') {
+      return <Inicio addToCart={addToCart} toggleCard={definirCardPopup} idCesta={idCesta}/>
+    }
+    else if(page === 'productos') {
+      return <><Buscador buscar={buscar}/><Productos addToCart={addToCart} busqueda={busqueda} toggleCard={definirCardPopup} idCesta={idCesta}/></>
+    }
+    else if(page === 'blog') {
+      return <Blog/>
+    }
+    else if(page === 'cesta') {
+      if(isLogged){
         return <Cesta cesta={cesta} removeFromCart={removeFromCart}/>
-      default:
+      }
+      else {
+        toast.error('Debes iniciar sesión para ver la cesta')
+        cambiarPagina('inicio') 
         return <Inicio />
+      }
+    }
+    else {
+      return <Inicio />
+    }
+  }
+
+  const getLoginPopup = () => {
+    if(isLogged) {
+      return <Logged onClose={toggleLoginPopup} logout={logout} login={login} />
+    }
+    else {
+      return <Login onClose={toggleLoginPopup} checkLogin={checkLogin} />
     }
   }
 
@@ -76,7 +132,7 @@ function App() {
       
       {getContent()}
 
-      {showLoginPopup && <Login onClose={toggleLoginPopup} />}
+      {showLoginPopup && getLoginPopup()}
 
       {showCardPopup && <ProductosPopup onClose={toggleCardPopup} producto={cardPopup} addToCart={addToCart} />}
       

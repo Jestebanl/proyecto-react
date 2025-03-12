@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Login.css'; // Asegúrate de crear este archivo CSS
 
 // eslint-disable-next-line react/prop-types
-function Login({ onClose }) {
+function Login({ onClose, checkLogin }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -11,7 +11,12 @@ function Login({ onClose }) {
     // Lógica de inicio de sesión aquí
     console.log('Email:', email);
     console.log('Password:', password);
+    checkLogin(email, password)
+    setEmail('')
+    setPassword('')
   };
+
+  
 
   return (
     <div className="login-popup">
@@ -39,7 +44,7 @@ function Login({ onClose }) {
               required
             />
           </div>
-          <button type="submit" className="submit-button">Iniciar sesión</button>
+          <button type="submit" className="submit-button" onClick={() => handleSubmit()}>Iniciar sesión</button>
         </form>
       </div>
     </div>
