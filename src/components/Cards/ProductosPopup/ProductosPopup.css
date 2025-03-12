@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: start;
   z-index: 1000;
-  padding-top: 50px;
+  padding-top: 5%;
 }
 
 .card-popup-content {
@@ -91,4 +91,14 @@
 .card-popup .card-button:hover {
   border: 1px solid rgb(255, 127, 50);
   background-color: rgb(255, 127, 50);
+}
+
+@media (max-width: 750px) {
+  .card-popup {
+    padding-top: 25%;
+  }
+  .card-popup-content{
+    width: 90%;
+  }
+
 }

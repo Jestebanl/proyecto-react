@@ -93,10 +93,41 @@ nav ul li p {
 /* MEDIA HEADER */
 
 @media (max-width: 750px) {
-    header .logo img {
-        width: 150px;
-        padding: 5px;
-    }
+  header .logo{
+    margin-left: 0.5em;
+  }
+  
+  header .logo a {
+    margin: 0;
+  }
+
+  header .logo img {
+    width: 150px;
+    padding: 5px;
+  }
+
+  header .botonesHeader {
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  header .botonesHeader i {
+    width: auto;
+    height: 45px;
+    min-height: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    color: rgb(255, 127, 50);
+    transform: scale(1);
+    transition: 0.3s;
+  }
+
 }
 
 /* MEDIA NAV */
@@ -117,5 +148,7 @@ nav ul li p {
         text-align: center;
     }
 
-    
+    .lista-nav{
+        padding: 10px;
+    }
 }

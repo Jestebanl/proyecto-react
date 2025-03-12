@@ -54,3 +54,9 @@ input:not(:placeholder-shown) ~ .reset {
   width: 17px;
   margin-top: 3px;
 }
+
+@media (max-width: 750px) {
+  .form {
+    width: 80%;
+  }
+}
