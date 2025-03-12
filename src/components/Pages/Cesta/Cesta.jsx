@@ -29,7 +29,7 @@ function Cesta({ cesta, removeFromCart }) {
       
       {/* Caja de total */}
       <div className="total-box">
-        <strong>Total: </strong> {total}€
+        <strong>Total: </strong> {total.toFixed(2)}€
       </div>
     </div>
   );
