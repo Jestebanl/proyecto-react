@@ -1,4 +1,5 @@
 .producto {
+  min-height: 206px;
   padding: 3% 3% 0 3%;
   display: flex;
   flex-wrap: wrap;

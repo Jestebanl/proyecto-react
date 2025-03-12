@@ -7,7 +7,7 @@ function Cesta({ cesta, removeFromCart }) {
     removeFromCart(id);
   };
 
-  console.log(cesta);
+  //console.log(cesta);
   // Calcular el total de la cesta
   const total = cesta.reduce((acc, producto) => acc + producto.coste, 0);
 
@@ -18,11 +18,7 @@ function Cesta({ cesta, removeFromCart }) {
         {cesta.map((producto) => (
           <CestaCards
             key={producto.id}
-            id={producto.id}
-            productoId={producto.productoId}
-            img={producto.img}
-            titulo={producto.titulo}
-            coste={producto.coste}
+            producto={producto}
             removeFromCart={borrarElemento}
           />
         ))}
