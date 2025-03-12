@@ -3,7 +3,7 @@ import ProductosData from "../../../data/productos.json"
 import ProductosCards from "../../Cards/ProductosCards/ProductosCards"
 import './Productos.css'
 
-function Productos({addToCart, busqueda, toggleCard}) {
+function Productos({addToCart, busqueda, toggleCard, idCesta}) {
   const addToCesta = producto => {
     addToCart(producto)
   }
@@ -16,8 +16,9 @@ function Productos({addToCart, busqueda, toggleCard}) {
     if(busqueda === ''){
       return ProductosData.map((producto) => (
         <ProductosCards
-          key = {producto.id}
-          id={producto.id}
+          key={producto.id}
+          id={idCesta}
+          productoId={producto.id}
           img={producto.img}
           titulo={producto.titulo}
           texto={producto.texto}
@@ -30,8 +31,9 @@ function Productos({addToCart, busqueda, toggleCard}) {
     else{
       return ProductosData.filter(producto => producto.titulo.toLowerCase().includes(busqueda.toLowerCase())).map((producto) => (
         <ProductosCards
-          key = {producto.id}
-          img={producto.img}
+          key={idCesta}
+          id={idCesta}
+          productoId={producto.id}
           titulo={producto.titulo}
           texto={producto.texto}
           coste={producto.coste}

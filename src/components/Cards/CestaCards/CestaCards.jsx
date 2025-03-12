@@ -1,7 +1,7 @@
 import './CestaCards.css'
 
 // eslint-disable-next-line react/prop-types
-function CestaCards({ id, img, titulo, coste, removeFromCart }) {
+function CestaCards({ id, productoId, img, titulo, coste, removeFromCart }) {
 
   return (
 

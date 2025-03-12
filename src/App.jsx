@@ -18,6 +18,7 @@ function App() {
   const [busqueda, setBusqueda] = useState('')
   const [showCardPopup, setShowCardPopup] = useState(false)
   const [cardPopup, setCardPoput] = useState({})
+  const [idCesta, setIdCesta] = useState(1)
 
   const cambiarPagina = pagina => {
     setPage(pagina)
@@ -25,6 +26,7 @@ function App() {
 
   const addToCart = producto => {
     setCesta([...cesta, producto])
+    setIdCesta(producto.id + 1)
     toast.success('Producto añadido a la cesta');
   }
 
@@ -53,9 +55,9 @@ function App() {
   const getContent = () => {
     switch(page) {
       case 'inicio':
-        return <Inicio addToCart={addToCart} toggleCard={definirCardPopup}/>
+        return <Inicio addToCart={addToCart} toggleCard={definirCardPopup} idCesta={idCesta}/>
       case 'productos':
-        return <><Buscador buscar={buscar}/><Productos addToCart={addToCart} busqueda={busqueda} toggleCard={definirCardPopup}/></>
+        return <><Buscador buscar={buscar}/><Productos addToCart={addToCart} busqueda={busqueda} toggleCard={definirCardPopup} idCesta={idCesta}/></>
       case 'blog':
         return <Blog/>
       case 'cesta':

@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
 import './ProductosCards.css'
 
-function Productos({ id, img, titulo, texto, coste, addToCart, toggleCardPopup }) {
+function Productos({ id, productoId, img, titulo, texto, coste, addToCart, toggleCardPopup }) {
   const tarjeta = {
     key: id,
     id: id,
+    productoId: productoId,
     img: img,
     titulo: titulo,
     coste: coste
@@ -12,6 +13,7 @@ function Productos({ id, img, titulo, texto, coste, addToCart, toggleCardPopup }
   const card = {
     key: id,
     id: id,
+    productoId: productoId,
     img: img,
     titulo: titulo,
     texto: texto,

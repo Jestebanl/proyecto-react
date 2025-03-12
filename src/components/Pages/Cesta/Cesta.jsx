@@ -19,6 +19,7 @@ function Cesta({ cesta, removeFromCart }) {
           <CestaCards
             key={producto.id}
             id={producto.id}
+            productoId={producto.productoId}
             img={producto.img}
             titulo={producto.titulo}
             coste={producto.coste}

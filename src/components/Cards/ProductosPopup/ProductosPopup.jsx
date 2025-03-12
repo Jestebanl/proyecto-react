@@ -6,6 +6,7 @@ function ProductosPopup({ onClose, producto, addToCart }) {
   const tarjeta = {
     key: producto.id,
     id: producto.id,
+    productoId: producto.productoId,
     img: producto.img,
     titulo: producto.titulo,
     coste: producto.coste
